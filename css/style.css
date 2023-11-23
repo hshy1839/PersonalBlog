@@ -1,0 +1,27 @@
+body {
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+@media (max-width: 768px) {
+    img {
+        width: auto;
+        height: 100%;
+    }
+}
+
+#clock, #quote, #today, #todo-list {
+    font-size: 30px;
+    color: white;
+    font-family:'Courier New', Courier, monospace;
+}
