@@ -10,11 +10,13 @@ const USERNAME_KEY = "username";
 
 function onLoginSubmit(event) {
     event.preventDefault();
+    loginForm.style.display = 'none';
     loginForm.classList.add(HIDDEN_CLASSNAME);
     const username = loginInput.value;
     localStorage.setItem(USERNAME_KEY, username);
     paintGreetings(); 
 }
+
 
 function paintGreetings() {
     const username = localStorage.getItem(USERNAME_KEY);
@@ -28,7 +30,6 @@ logoutInput.addEventListener("click", (event) => {
     localStorage.removeItem(USERNAME_KEY);
     location.reload();
 });
-
 
 const savedUsername = localStorage.getItem(USERNAME_KEY);
 
