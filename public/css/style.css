@@ -51,9 +51,12 @@ input {
   }
   ul{
     list-style: none;
+    padding: 0;
   }
 
   li {
+    display: flex;
+    align-items: center;
     font-size: large;
     text-align: center;
   }
@@ -64,7 +67,9 @@ input {
     width: 10;
     font-size: 12px;
   }
-
+  input[type="checkbox"] {
+    margin-right: -25%;
+  }
 #clock, #todo-form, #quote, #greeting, #login-form, #logout-form {
     text-align: center;
     margin: 0%;
@@ -121,6 +126,17 @@ input {
 }
 #todo-form {
     margin-top: 1%;
+}
+#todo-list li {
+  display: flex;
+
+}
+#todo-list button {
+  background: transparent;
+  color: red;
+  border: none;
+  font-size: larger;
+  font-weight: 1000;
 }
 #quote {
   

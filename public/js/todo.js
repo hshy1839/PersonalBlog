@@ -28,6 +28,9 @@ function deleteTodo(event) {
 
 function paintTodo(newTodo) {
     const li = document.createElement("li");
+    const checkbox = document.createElement('input');
+    checkbox.type = 'checkbox';
+    li.appendChild(checkbox);
     li.id = newTodo.id;
     const span = document.createElement("span");
     span.innerText = newTodo.text;
@@ -37,6 +40,14 @@ function paintTodo(newTodo) {
     li.appendChild(span);
     li.appendChild(button);
     toDoList.appendChild(li); 
+    
+    checkbox.addEventListener('change', function () {
+        if (checkbox.checked) {
+            span.style.textDecoration = 'line-through';
+        } else {
+            span.style.textDecoration = 'none';
+        }
+    });
 }
 
 function handleToDoSubmit(event) {
