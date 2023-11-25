@@ -9,10 +9,20 @@ function saveToDos() {
     localStorage.setItem(TODOS_KEY, JSON.stringify(toDos));
 }
 
+function deleteAlert() {
+    if(confirm("정말 삭제할까요?")) {
+        alert("삭제되었습니다.");
+    } else {
+        alert("취소되었습니다.");
+        prevent.deleteTodo();
+    }
+}
+
 function deleteTodo(event) {
     const li = event.target.parentElement;
     toDos = toDos.filter((toDo) => toDo.id !== parseInt(li.id));
     saveToDos();
+    deleteAlert(); 
     li.remove();
 }
 
@@ -22,7 +32,7 @@ function paintTodo(newTodo) {
     const span = document.createElement("span");
     span.innerText = newTodo.text;
     const button = document.createElement("button");
-    button.innerText = "Delete";
+    button.innerText = "X";
     button.addEventListener("click", deleteTodo);
     li.appendChild(span);
     li.appendChild(button);

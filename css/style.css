@@ -1,6 +1,10 @@
+.hidden {
+    display: none;
+}
+
 body {
-    width: 100%;
-    height: 100%;
+    font-family: 'Baloo Tammudu 2', 'Noto Sans KR', sans-serif;
+    color: white;
 }
 
 img {
@@ -12,16 +16,76 @@ img {
     left: 0;
     z-index: -1;
 }
-
-@media (max-width: 768px) {
-    img {
-        width: auto;
-        height: 100%;
-    }
-}
-
-#clock, #quote, #today, #todo-list {
-    font-size: 30px;
+input {
+    width:60%;
+    height: 25px;
+    font-size: 12px;
     color: white;
-    font-family:'Courier New', Courier, monospace;
+    border-top: 0cap;
+    border-left: 0cap;
+    border-right: 0cap;
+    border-color: white;
+    background: transparent;
+    padding-left: 10px;
+    margin-left: 3%;
+  }
+
+  @-webkit-keyframes blink {
+    0% {color: red;}
+    10% {color: pink;}
+    20% {color:darkorange;}
+    30%{color:orange;}
+    40%{color:yellow;}
+    50%{color:yellowgreen;}
+    60%{color:green;}
+    70%{color:darkgreen;}
+    80%{color: blue;}
+    90%{color:darkblue;}
+    100%{color:purple;}
+  }
+
+  input::placeholder {
+    font-size: 60%;
+    color: white;
+    font-style: italic;
+  }
+  ul{
+    list-style: none;
+  }
+
+  li {
+    font-size: large;
+    text-align: center;
+  }
+
+  li button {
+    margin-top: 2px;
+    margin-left: 3%;
+    width: 10;
+    font-size: 12px;
+  }
+
+#clock, #todo-form, #quote {
+    text-align: center;
+    margin: 0%;
 }
+#today {
+    font-size: 15px;
+    margin-left: 0cqb;
+    margin-top: 0%;
+}
+#clock {
+
+    -webkit-animation: blink 6.0s linear infinite;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 300%;
+    margin-top: 10%;
+}
+#todo-form {
+    margin-top: 1%;
+}
+#quote {
+    font-size: 7px;
+    margin-top: 10%;
+}
+
