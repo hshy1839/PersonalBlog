@@ -1,4 +1,5 @@
 {
+  "homepage": "https://hshy1839.github.io/PersonalBlog/",
   "name": "chromeclone",
   "version": "1.0.0",
   "description": "",
@@ -15,5 +16,7 @@
     "nodemon": "^3.0.1"
   },
   "dev": "nodemon ./app.js",
-  "homepage": "https://hshy1839.github.io/PersonalBlog/"
+  "devDependencies": {
+    "gh-pages": "^6.1.0"
+  }
 }

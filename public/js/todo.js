@@ -1,7 +1,7 @@
 const toDoForm = document.getElementById("todo-form");
 const toDoInput = document.querySelector("#todo-form input");
 const toDoList = document.getElementById("todo-list");
-
+document.write("<script src='greetings.js'></script>");
 const TODOS_KEY = "todos";
 let toDos = [];
 
