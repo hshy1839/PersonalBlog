@@ -38,4 +38,6 @@ if(savedUsername === null) {
     loginForm.addEventListener("submit", onLoginSubmit);
 } else {
     paintGreetings(savedUsername);
+    loginForm.style.display = 'none';
+    loginForm.classList.add(HIDDEN_CLASSNAME);
 }
