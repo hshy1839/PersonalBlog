@@ -44,8 +44,8 @@ input {
     100%{color:purple;}
   }
 
-  input::placeholder {
-    font-size: 60%;
+  #todo-form input::placeholder {
+    font-size: 100%;
     color: white;
     font-style: italic;
   }
@@ -90,16 +90,17 @@ input {
   color: white;
   border: none;
   background:transparent;
-  
 }
 #login-input {
-  width: 100px;
-  height: 30px;
+  width: 35%;
+  height: 30%;
   font-size: 15px;
   border: 1px solid white; 
-  padding-left: 10px;
   background-color: transparent;
-  margin-right: 10px;
+}
+#login-form input::placeholder {
+  color: white;
+  font-size: 80%;
 }
 #logout {
   font-weight: 600;
@@ -107,6 +108,7 @@ input {
   color: white;
   border: none;
   background:transparent;
+  margin-right: 5%;
 }
 #greeting {
   margin-top: 8%;
