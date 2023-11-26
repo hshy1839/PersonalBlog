@@ -31,7 +31,7 @@ input {
   margin-left: 3%;
 }
 
-@-webkit-keyframes blink {
+@keyframes blink {
   0% {
     color: red;
   }
@@ -184,7 +184,7 @@ input[type="checkbox"] {
   margin-top: 1%;
 }
 
-#todo-list button {}
+
 
 #quote {
 
