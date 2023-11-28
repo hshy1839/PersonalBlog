@@ -1,0 +1,80 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #333;
+    padding: 1rem;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+
+.logo button {
+    border: none;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: larger;
+    background: none;
+    z-index: 2;
+}
+
+.logo button:hover {
+    cursor: pointer;
+}
+
+.navbar-toggle {
+    cursor: pointer;
+    z-index: 3;
+    margin-right: 3%;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.navbar-nav {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    height: 100%;
+    width: 250px;
+    background-color: #333;
+    padding-top: 60px;
+    transition: 0.4s;
+    z-index: 1;
+}
+
+.navbar-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-nav a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.navbar-nav a:hover {
+    background-color: #555;
+}
+
+.navbar-nav.show {
+    right: 0;
+    z-index: 2;
+}

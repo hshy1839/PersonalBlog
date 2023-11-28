@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Blog</title>
+    <link rel="stylesheet" href="/css/signup.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <button type="submit">Personal Blog</button>
+        </div>
+        <div class="navbar-toggle" id="navbarToggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav class="navbar-nav" id="navbarNav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="signup">
+        <form class="form-signup">
+            <label for="name" class="signup__label">이름</label>
+            <input id="signup_name" class="signup__input" type="text" placeholder="이름" required>
+
+            <label for="email" class="signup__label">이메일</label>
+            <input id="signup_email" class="signup__input" type="email" placeholder="이메일" required>
+
+            <label for="username" class="signup__label">아이디</label>
+            <input id="signup_username" class="signup__input" type="text" placeholder="아이디" required>
+
+            <label for="password" class="signup__label">비밀번호</label>
+            <input id="signup_password" class="signup__input" type="password" placeholder="비밀번호" required>
+
+            <label for="password" class="signup__label">비밀번호 확인</label>
+            <input id="signup_password" class="signup__input" type="password" placeholder="비밀번호 확인" required>
+
+            <label for="birthdate" class="signup__label">생년월일</label>
+            <input id="signup_birthdate" class="signup__input" type="date" required>
+
+            <button class="signup__submit" type="submit">가입하기</button>
+        </form>
+    </div>
+    <script>
+       document.addEventListener('DOMContentLoaded', function () {
+    const navbarToggle = document.getElementById('navbarToggle');
+    const navbarNav = document.getElementById('navbarNav');
+
+    navbarToggle.addEventListener('click', function () {
+        navbarNav.classList.toggle('show');
+    });
+});
+    </script>
+</body>
+
+</html>

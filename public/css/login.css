@@ -12,8 +12,15 @@
     width: 100%;
     max-width: 525px;
     min-height: 680px;
+    border: 1px solid white;
 }
-
+.login-nav__item  {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: bold;
+    font-size: 38px;
+    margin-left: 18%;
+    color: white;
+}
 .form-login {
     position: relative;
     z-index: 1;
@@ -101,6 +108,23 @@
     margin: 0;
     width: 18px;
     height: 18px;
+    cursor: pointer;
+}
+
+.signup_id_btn {
+    margin-left: 40%;
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.signup_id_btn:hover {
+    color: gray;
+}
+.signup_id_btn:active {
+    color: white;
 }
 
 .login__submit {
