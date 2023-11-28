@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+
+<body>
+    <header>
+        <div id="navbar">
+            <h2 id="today"></h2>
+        </div>
+    </header>
+    <div class="login-container">
+        <form class="form-login" >
+            <ul class="login-nav">
+                <li class="login-nav__item active">
+                    <a href="#" login-nav__item active>로그인</a>
+                </li>
+            </ul>
+            <label for="login-input-user" class="login__label">아이디</label>
+            <input id="login-input-user" class="login__input" type="text" />
+
+            <label for="login-input-password" class="login__label">비밀번호</label>
+            <input id="login-input-password" class="login__input" type="password" />
+            <label for="login-sign-up" class="login__label--checkbox">
+
+                <input id="login-remember" type="checkbox" class="login__input--checkbox" />
+                아이디 저장
+            </label>
+            <button class="register_id" type="submit" onclick="move_register()">회원가입</button>
+            <button class="login__submit" type="submit">로그인</button>
+        </form>
+    </div>
+    <br>
+    <footer>
+        <div id="quote">
+            <span></span>
+            <span></span>
+        </div>
+    </footer>
+    <script>
+        function move_register() {
+            event.preventDefault();
+            location.href="/login/register";
+            alert('Welcome !');
+        }
+    </script>
+    <script src="/js/login.js"></script>
+    <script src="/js/today.js"></script>
+    <script src="/js/background.js"></script>
+    <script src="/js/clock.js"></script>
+    <script src="/js/quotes.js"></script>
+    <script src="/js/weather.js"></script>
+    <script src="/js/background.js"></script>
+</body>
+
+</html>

@@ -1,7 +1,6 @@
 const toDoForm = document.getElementById("todo-form");
 const toDoInput = document.querySelector("#todo-form input");
 const toDoList = document.getElementById("todo-list");
-document.write("<script src='greetings.js'></script>");
 const TODOS_KEY = "todos";
 let toDos = [];
 
@@ -30,6 +29,7 @@ function paintTodo(newTodo) {
     const li = document.createElement("li");
     const checkbox = document.createElement('input');
     checkbox.type = 'checkbox';
+    checkbox.id = "todo_checkbox";
     li.appendChild(checkbox);
     li.id = newTodo.id;
     const span = document.createElement("span");

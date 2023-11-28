@@ -1,23 +1,23 @@
 {
   "homepage": "https://hshy1839.github.io/PersonalBlog/",
-  "name": "chromeclone",
+  "name": "PersonalBlog",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "login.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "gh-pages -d build",
-    "predeploy" : "npm run build"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
     "g": "^2.0.1",
+    "html": "^1.0.0",
     "nodemon": "^3.0.1"
   },
   "dev": "nodemon ./app.js",
   "devDependencies": {
     "gh-pages": "^6.1.0"
   }
+  
 }
