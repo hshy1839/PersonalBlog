@@ -5,6 +5,8 @@ document.write("<script src='greetings.js'></script>");
 const TODOS_KEY = "todos";
 let toDos = [];
 
+const HIDDEN_CLASSNAME = "hidden";
+
 function saveToDos() {
     localStorage.setItem(TODOS_KEY, JSON.stringify(toDos));
 }

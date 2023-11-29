@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/calendar.css">
     <title>Personal Blog</title>
 
 </head>
@@ -29,17 +30,46 @@
         <span></span>
         <span></span>
     </div>
-    
-    <form id="todo-form">
+    <div class="calendar-todo">
+    <form id="todo-form" class="hidden">
         <input type="text" placeholder="To Do 리스트를 작성하고, Enter를 누르세요." required>
     </form>
     <ul id="todo-list"></ul>
+    <div>
+    <table class="Calendar">
+        <thead>
+            <tr>
+                <td onClick="prevCalendar();" style="cursor:pointer;">&#60;</td>
+                <td colspan="5">
+                    <span id="calYear"></span>년
+                    <span id="calMonth"></span>월
+                </td>
+                <td onClick="nextCalendar();" style="cursor:pointer;">&#62;</td>
+            </tr>
+            <tr>
+                <td>일</td>
+                <td>월</td>
+                <td>화</td>
+                <td>수</td>
+                <td>목</td>
+                <td>금</td>
+                <td>토</td>
+            </tr>
+        </thead>
+
+        <tbody>
+        </tbody>
+    </table>
+    </div>
+</div>
     <footer>
         <div id="quote">
             <span></span>
             <span></span>
         </div>
     </footer>
+    </script>
+    <script src="/js/calendar.js"></script>
     <script src="/js/today.js"></script>
     <script src="/js/controlCSS.js"></script>
     <script src="/js/background.js"></script>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const express = require('express');
 const http = require('http');
 const path = require('path');
@@ -26,6 +27,14 @@ app.use((req, res, next) => {
   res.status(err.status || 500);
   res.render('error');
 })
+=======
+var express = require('express');
+var app = express();
+var http = require('http');
+
+const port = 7777;
+
+>>>>>>> 1cfc4c9be4191c87b274a7bed4c543ef72b4efe0
 app.get('/', function(req, res) { res.sendFile(__dirname+"/views/login.html");});
 app.use('/', express.static(__dirname + "/public"));
 app.use('/', express.static(__dirname + "/views"));
@@ -36,3 +45,4 @@ app.get('/login/signup', function(req, res) { res.sendFile(__dirname+"/views/sig
 var server = http.createServer(app).listen(port, function () {
   console.log(`listening on http://localhost:${port}`);
 });
+
