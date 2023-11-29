@@ -118,3 +118,4 @@ function toggleChoiceDay(nowColumn) {
 function choiceDate(nowColumn) {
     toggleChoiceDay(nowColumn);
 }
+

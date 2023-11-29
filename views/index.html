@@ -37,6 +37,9 @@
             <tr>
                 <td onClick="prevCalendar();" style="cursor:pointer;">&#60;</td>
                 <td colspan="5">
+                    <span id="calText">To Do 리스트를 작성해보아요</span>
+                    <br>
+
                     <span id="calYear"></span>년
                     <span id="calMonth"></span>월
                 </td>
@@ -57,15 +60,15 @@
         </tbody>
     </table>
     </div>
-    <form id="todo-form" >
+    <form id="todo-form" style="display: none;">
         <input type="text"  placeholder="To Do 리스트를 작성하고, Enter를 누르세요." required>
     </form>
     <ul id="todo-list"></ul>
 </div>
     <footer>
         <div id="quote">
-            <span></span>
-            <span></span>
+            <span style="display: none;"></span>
+            <span style="display: none;"></span>
         </div>
     </footer>
     </script>

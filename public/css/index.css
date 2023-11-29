@@ -32,7 +32,7 @@ img {
 }
 
 #todo-form input {
-  width: 200%;
+  width: 40%;
   height: 25px;
   font-size: 12px;
   color: white;
@@ -41,8 +41,7 @@ img {
   border-right: 0cap;
   border-color: white;
   background: transparent;
-  padding-left: 20px;
-  margin-left: -153%;
+  padding-left: 10px;
 }
 
 @keyframes blink {
@@ -98,16 +97,14 @@ img {
   text-align: center;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
-}
+#calText {
+  font-size: small;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style: bold;
 
+}
 li {
-  display: flex;
-  align-items: center;
-  font-size: medium;
-  text-align: center;
+  display: block;
 }
 
 li button {
@@ -136,7 +133,25 @@ li button {
   text-align: center;
   margin: 0%;
 }
-
+#todo-form {
+  width: 50%;
+  margin-left: 10px;
+}
+#todo-form ul {
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start;
+  list-style: none;
+  padding: 0;
+}
+#todo-form li {
+  list-style: none;}
+@media (max-width: 768px) {
+  #todo-form {
+    width: 100%;
+    margin-left: 0; 
+  }
+}
 #navbar {
   display: flex;
   justify-content: space-between;
@@ -147,6 +162,7 @@ li button {
   font-size: 100%;
   margin-left: 2%;
   margin-top: 1%;
+  user-select: none;
 }
 
 #login-form {
@@ -193,6 +209,7 @@ li button {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 300%;
   margin-top: 10%;
+  user-select: none;
 }
 
 #todo-form {
