@@ -2,11 +2,11 @@ div table {
   background-color : white;
   color: black;
   height: 45%;
-  width: 50%;
+  width: 80%;
   margin: 0px;
-  padding: 10px;
+  padding: 15px;
   margin: 0 auto;
-  margin-left: 3%;
+  margin-left: 40%;
   border-radius:5px;
   box-shadow:0px 40px 30px -20px rgba(0,0,0,0.3);
 }
@@ -63,7 +63,7 @@ td {
 
 .futureDay.choiceDay,
 .today.choiceDay {
-  background: radial-gradient(circle, #062092 40%, transparent 30%);
+  background: radial-gradient(circle, grey 43%, transparent 30%);
   background-size: 100% 100%;
   color: #fff;
   font-weight: 600;

@@ -1,12 +1,9 @@
-const toDoForm = document.getElementById("todo-form");
+const toDoForm = document.querySelector("#todo-form");
 const toDoInput = document.querySelector("#todo-form input");
 const toDoList = document.getElementById("todo-list");
-document.write("<script src='greetings.js'></script>");
+document.write("<script src='/js/greetings.js'></script>");
 const TODOS_KEY = "todos";
 let toDos = [];
-
-const HIDDEN_CLASSNAME = "hidden";
-
 function saveToDos() {
     localStorage.setItem(TODOS_KEY, JSON.stringify(toDos));
 }

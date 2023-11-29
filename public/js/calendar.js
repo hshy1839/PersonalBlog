@@ -82,20 +82,35 @@ function leftPad(value) {
     return value;
 }
 
-function removeHidden(nowColumn) {
-    const todoForm = document.getElementById("todo-form");
+function toggleChoiceDay(nowColumn) {
+    const choiceDayElement = document.querySelector(".choiceDay");
 
-    if (document.querySelector(".choiceDay")) {
-        document.querySelector(".choiceDay").classList.remove("choiceDay");
+    if (choiceDayElement) {
+        if (choiceDayElement !== nowColumn) {
+            choiceDayElement.classList.remove("choiceDay");
+            nowColumn.classList.add("choiceDay");
+        } else {
+            choiceDayElement.classList.remove("choiceDay");
+        }
+    } else {
+        nowColumn.classList.add("choiceDay");
     }
 
-    nowColumn.classList.add("choiceDay");
+    const isChoiceDay = nowColumn.classList.contains("choiceDay");
 
-    // choiceDay가 있을 때
-    if (document.querySelector(".choiceDay")) {
-        todoForm.classList.remove("hidden");
+    if (isChoiceDay) {
+        // 선택된 날짜에 대한 추가 작업을 수행할 수 있습니다.
+        // 예: 해당 날짜의 할 일을 불러오거나 다른 특별한 작업을 수행하는 등
+        const todoForm = document.getElementById("todo-form");
+        todoForm.style.display = 'block';
     } else {
-        todoForm.classList.add("hidden");
+        // 선택 해제된 경우에 수행할 작업을 추가할 수 있습니다.
+        const todoForm = document.getElementById("todo-form");
+        todoForm.style.display = 'none';
     }
 }
 
+// 기존의 choiceDate 함수 부분을 아래와 같이 변경합니다.
+function choiceDate(nowColumn) {
+    toggleChoiceDay(nowColumn);
+}
