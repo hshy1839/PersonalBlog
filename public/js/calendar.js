@@ -66,11 +66,15 @@ function choiceDate(nowColumn) {
 function prevCalendar() {
     nowMonth = new Date(nowMonth.getFullYear(), nowMonth.getMonth() - 1, nowMonth.getDate());   // 현재 달을 1 감소
     buildCalendar();    // 달력 다시 생성
+    const todoForm = document.getElementById("todo-form");
+    todoForm.style.display = 'none';
 }
 // 다음달 버튼 클릭
 function nextCalendar() {
     nowMonth = new Date(nowMonth.getFullYear(), nowMonth.getMonth() + 1, nowMonth.getDate());   // 현재 달을 1 증가
     buildCalendar();    // 달력 다시 생성
+    const todoForm = document.getElementById("todo-form");
+    todoForm.style.display = 'none';
 }
 
 // input값이 한자리 숫자인 경우 앞에 '0' 붙혀주는 함수
