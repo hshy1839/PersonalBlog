@@ -104,7 +104,6 @@ function toggleChoiceDay(nowColumn) {
 
     if (isChoiceDay) {
         // 선택된 날짜에 대한 추가 작업을 수행할 수 있습니다.
-        // 예: 해당 날짜의 할 일을 불러오거나 다른 특별한 작업을 수행하는 등
         const todoForm = document.getElementById("todo-form");
         todoForm.style.display = 'block';
     } else {
