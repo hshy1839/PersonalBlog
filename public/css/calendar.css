@@ -1,0 +1,77 @@
+div table {
+  background-color : white;
+  color: black;
+  height: 45%;
+  width: 50%;
+  margin: 0px;
+  padding: 10px;
+  margin: 0 auto;
+  margin-left: 3%;
+  border-radius:5px;
+  box-shadow:0px 40px 30px -20px rgba(0,0,0,0.3);
+}
+
+td {
+  width: 50px;
+  height: 50px;
+}
+
+.Calendar {
+  text-align: center;
+}
+
+.Calendar>thead>tr:first-child>td {
+  font-family: 'Questrial', sans-serif;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.Calendar>thead>tr:last-child>td {
+  font-family: 'Questrial', sans-serif;
+  font-weight: 600;     
+}
+
+.Calendar>tbody>tr>td>p {
+  font-family: 'Montserrat', sans-serif;
+  height: 45px;
+  width: 45px;
+  border-radius: 45px;
+  transition-duration: .2s;
+  line-height: 45px;
+  margin: 2.5px;
+  display: block;
+  text-align: center;
+}        
+
+.pastDay {
+  color: gray;
+}
+
+.today {
+  color: #F5D042;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.futureDay {
+  cursor: pointer;
+  color: black;
+}
+.futureDay:hover{
+  color:#868686;
+}
+
+.futureDay.choiceDay,
+.today.choiceDay {
+  background: radial-gradient(circle, #062092 40%, transparent 30%);
+  background-size: 100% 100%;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.calendar-todo {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
