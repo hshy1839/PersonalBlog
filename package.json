@@ -1,8 +1,8 @@
 {
   "homepage": "https://hshy1839.github.io/PersonalBlog/",
-  "name": "PersonalBlog",
+  "name": "personalblog",
   "version": "1.0.0",
-  "description": "",
+  "description": "personalBlog",
   "main": "./views/login.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,7 +13,12 @@
     "express": "^4.18.2",
     "g": "^2.0.1",
     "html": "^1.0.0",
+    "morgan": "^1.10.0",
+    "mysql2": "^3.6.5",
     "nodemon": "^3.0.1",
+    "nunjucks": "^3.2.4",
+    "sequelize": "^6.35.1",
+    "sequelize-cli": "^6.6.2",
     "sqlite3": "^5.1.6"
   },
   "dev": "nodemon ./app.js",
